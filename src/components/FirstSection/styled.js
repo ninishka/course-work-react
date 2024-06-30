@@ -64,13 +64,12 @@ export const ButtonNext = styled.button`
   }
 `
 
-export const SliderItem = styled.ul`
+export const SliderUl = styled.ul`
   display: ${props => props.$isActive ? 'block' : 'none'}    
 `
 
 export const StyledLi = styled.li`
   list-style-type: none;
-
 `
 
 export const Name = styled.h2`

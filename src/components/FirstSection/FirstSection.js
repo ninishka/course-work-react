@@ -6,7 +6,7 @@ import {
   Slider, 
   SliderImage, 
   ButtonNext, 
-  SliderItem, 
+  SliderUl, 
   Name, 
   StyledLi
 } from './styled'
@@ -59,12 +59,10 @@ const slidesData = [
   },
 ]
 
-
-
 const FirstSection = () => {
   const [ activeSlide, setActiveSlide ] = useState(0)
 
-  const change = (movingForward = true) => {
+  const changeSlide = (movingForward = true) => {
     let newActiveSlide = activeSlide
     if (movingForward) {
       newActiveSlide += 1
@@ -77,21 +75,23 @@ const FirstSection = () => {
     setActiveSlide(newActiveSlide)
   }
 
-  setInterval(() => change(), 5000)
+  // setInterval(() => {
+  //   console.log('setInterval')
+  //   changeSlide()
+  // }, 5000)
 
   return (
     <PersonalNameInfo>
       <Slider id='slider'>
-        <ButtonNext onClick={() => change()}>{'<'}</ButtonNext>
+        <ButtonNext onClick={() => changeSlide(false)}>{'<'}</ButtonNext>
         {slidesData.map(({ alt, src }, index) => (
-          <SliderItem $isActive={index === activeSlide} key={alt} >
+          <SliderUl $isActive={index === activeSlide} key={alt} >
             <StyledLi>
               <SliderImage src={src} alt={alt} />
             </StyledLi>
-          </SliderItem>
+          </SliderUl>
         ))}
-        <ButtonNext onClick={() => change()}>{'>'}</ButtonNext>
-
+        <ButtonNext onClick={() => changeSlide()}>{'>'}</ButtonNext>
       </Slider>
       <NameOccupation>
         <Name>Hi, I' Am Nini Zambakhidze</Name>
@@ -99,7 +99,7 @@ const FirstSection = () => {
         <div>
           {data?.map(({ href, src, alt }) => (
             <a href={href} key={alt} target="_blank">
-              <StyledImg src={src} alt={alt} key={alt} />
+              <StyledImg src={src} alt={alt} />
             </a>
           ))}
         </div>
