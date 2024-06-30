@@ -17,7 +17,6 @@ import {
 
 import tpt3 from '../imgs/tpt3.png'
 
-
 const progressBarData = [
   { id: "myBar1", text: 'HTML', finalWidth: 90,  width: 10  },
   { id: "myBar2", text: 'CSS', finalWidth: 85,  width: 10 },
@@ -74,7 +73,7 @@ const SecondSection = () => {
       </div>
       <BarWrapper>
         {progressBarData.map(({id, text, finalWidth, width}) => (
-          <Item>
+          <Item key={id}>
             <Languages>
               <p>{text}</p>
               <Persentage>{`(${finalWidth}%)`}</Persentage>
