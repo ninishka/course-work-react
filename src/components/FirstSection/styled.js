@@ -6,7 +6,7 @@ export const StyledImg = styled.img`
   margin: 25px 9px;
 `
 
-export const PersonalNameInfo = styled.div`
+export const PersonalNameInfo = styled.section`
   display: flex;
   align-items: center;
   flex-direction: row;

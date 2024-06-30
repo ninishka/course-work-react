@@ -2,6 +2,7 @@ import './App.css';
 import FirstSection from './components/FirstSection/FirstSection'
 import SecondSection from './components/SecondSection/SecondSection'
 import ThirdSection from './components/ThirdSection/ThirdSection'
+import ForthSection from './components/ForthSection/ForthSection'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
+      <ForthSection/>
     </div>
   );
 }

@@ -35,7 +35,7 @@ const contactMe = [
 const ThirdSection = () => {
 
   return (
-    <div>
+    <section>
       <ContactMeWrapper>
         {contactMe.map(({ src, title, description }) => (
           <ContactMe key={title}>
@@ -51,7 +51,7 @@ const ThirdSection = () => {
           </ContactMe>
         ))}
       </ContactMeWrapper>
-    </div>
+    </section>
   );
 }
 
