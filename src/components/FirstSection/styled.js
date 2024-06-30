@@ -35,6 +35,12 @@ export const NameOccupation = styled.div`
   }
 `
 
+export const Slider = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`
+
 export const SliderImage = styled.img`
   max-height: 1000px;
   @media (max-width: 1000px) {
@@ -59,14 +65,13 @@ export const ButtonNext = styled.button`
 `
 
 export const SliderItem = styled.ul`
-  // display: none;
-  // transition: opacity 0.5s ease-in-out;
-
-  // &:first-child {
-  //   display: block;
-  // }
+  display: ${props => props.$isActive ? 'block' : 'none'}    
 `
 
+export const StyledLi = styled.li`
+  list-style-type: none;
+
+`
 
 export const Name = styled.h2`
   font-size: 51px;

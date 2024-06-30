@@ -1,5 +1,5 @@
 import './App.css';
-import FirstSection from './components/FirstSection'
+import FirstSection from './components/FirstSection/FirstSection'
 
 function App() {
   return (
