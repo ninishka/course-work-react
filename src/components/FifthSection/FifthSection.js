@@ -23,7 +23,6 @@ const changedContentForCheckboxes = [
     id: '0',
     feedback: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repudiandae ex officiis molestiae soluta harum',
     srcPerson: img1,
-    srcQuote: img2,
     role: 'Junior front end Developer',
     name: 'Sarah Sharashidze',
   },
@@ -31,7 +30,6 @@ const changedContentForCheckboxes = [
     id: '1',
     feedback: 'Esse repudiandae ex officiis molestiae soluta harum. Esse repudiandae ex officiis molestiae soluta harum. Esse repudiandae ex officiis molestiae soluta harum',
     srcPerson: img4,
-    srcQuote: img2,
     role: 'Middle front end Developer',
     name: 'Sarah Sharashidze'
   },
@@ -39,7 +37,6 @@ const changedContentForCheckboxes = [
     id: '2',
     feedback: 'Esse repudiandae ex officiis molestiae soluta harum. Esse repudiandae ex officiis molestiae soluta harum',
     srcPerson: img5,
-    srcQuote: img2,
     role: 'Senior front end Developer',
     name: 'Sarah Sharashidze'
   }
@@ -58,7 +55,7 @@ const ch = [
 ]
 
 const FifthSection = () => {
-  const [ checkedState, setCheckedState ] = useState(ch[0].id)
+  const [ checkedState, setCheckedState ] = useState('0')
 
   const rechecking = id => {
     if(checkedState !== id) setCheckedState(id)
@@ -69,14 +66,14 @@ const FifthSection = () => {
   return (
     <section>
       <ContentWrap backgroundImg={img3}>
-        {filterdContent.map(({ feedback, srcPerson, srcQuote, role, name }) => (
+        {filterdContent.map(({ feedback, srcPerson, role, name }) => (
            <ChangedContent>
             <OverlayText>{feedback}</OverlayText>
             <IconWrap>
               <img src={srcPerson} />
             </IconWrap>
             <Quote>
-              <QuoteItself src={srcQuote}/>
+              <QuoteItself src={img2}/>
               <Ptext>{role}</Ptext>
               <h3>{name}</h3>
             </Quote>
