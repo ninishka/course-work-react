@@ -6,6 +6,7 @@ import ForthSection from './components/ForthSection/ForthSection'
 import FifthSection from './components/FifthSection/FifthSection'
 import SixthSection from './components/SixthSection/SixthSection'
 import SeventhSection from './components/SeventhSection/SeventhSection'
+import EightSection from './components/EightSection/EightSection'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <FifthSection />
       <SixthSection />
       <SeventhSection />
+      <EightSection />
     </div>
   );
 }
