@@ -44,6 +44,7 @@ export const KubiksWrap = styled.div`
       bottom: -30px;
       border: 4px solid red;
     }
+    
   }
 `;
 export const TextWrapp = styled.div`

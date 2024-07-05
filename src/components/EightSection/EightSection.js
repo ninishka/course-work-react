@@ -49,12 +49,10 @@ const EightSection = () => {
       <RosaTeam>
         {teamClients.map(({title, text}) => (
         <KubiksWrap backgroundImg={img1}>
-          <>
             <TextWrapp>
               <RosaTitle>{title}</RosaTitle>
               <RosaText>{text}</RosaText>
             </TextWrapp>
-          </>
         </KubiksWrap>
       ))}
       </RosaTeam>
