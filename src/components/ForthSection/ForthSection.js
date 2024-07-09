@@ -68,16 +68,12 @@ const ForthSection = () => {
       <ArroundGrid>
         <FlexCont>
           {boxesData.map(({title, description, src}) => (
-            <Box>
-              <ImgContainer>
+            <Box key={title}>
+              <ImgContainer className='img-cont'>
                 <img src={src} />
               </ImgContainer>
-              <LabelBox>
-                  {title}
-              </LabelBox>
-              <DescriptionBox>
-                {description}
-              </DescriptionBox>
+              <LabelBox>{title}</LabelBox>
+              <DescriptionBox>{description}</DescriptionBox>
             </Box>
           ))}
         </FlexCont>

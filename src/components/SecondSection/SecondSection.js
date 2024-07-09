@@ -18,49 +18,13 @@ import {
 import tpt3 from '../imgs/tpt3.png'
 
 const progressBarData = [
-  { id: "myBar1", text: 'HTML', finalWidth: 90,  width: 10  },
-  { id: "myBar2", text: 'CSS', finalWidth: 85,  width: 10 },
-  { id: "myBar3", text: 'JS', finalWidth: 45,  width: 10  },
-  { id: "myBar4", text: 'React', finalWidth: 20,  width: 10 },
+  { id: "myBar1", text: 'HTML', finalWidth: 0.9,  width: 10  },
+  { id: "myBar2", text: 'CSS', finalWidth: 0.85,  width: 10 },
+  { id: "myBar3", text: 'JS', finalWidth: 0.45,  width: 10  },
+  { id: "myBar4", text: 'React', finalWidth: 0.20,  width: 10 },
 ]
 
 const SecondSection = () => {
-  // useEffect(() => {}, []) // start once
-  // useEffect(() => {}, [dependencies]) // start id dependencies has changed
-  // useEffect(() => {}) // start every render
-
-
-  // function move() {
-  //   let width = 10;
-  
-  //   const observer = new IntersectionObserver(function(entries) {
-  //     entries.forEach(entry => {
-  //       if (entry.isIntersecting) {
-  //         const id = setInterval(frame, 50); //რამდენად სწრაფად მუშაობს
-  
-  //         function frame() {
-  //           const targetWidth = progressBarData.find(bar => bar?.id === entry?.target?.id)?.finalWidth || 20;
-  
-  //           if (width >= targetWidth) {
-  //             clearInterval(id);
-  //           } else {
-  //             width++;
-  //             progressBarData.forEach(bar => {
-  //               if (bar.id === entry?.target?.id) {
-  //                 entry.target.style.width = width + '%'; //დავამატე სიგანე
-  //               }
-  //             });
-  //           }
-  //         }
-  //       }
-  //     });
-  //   });
-  
-  //   progressBarData.forEach(data => {
-  //     observer.observe(document.getElementById(data.id)); // entries = document.getElementById(data.id)
-  //   });
-  // }
-
   return (
     <Section2Wrapper>
       <Information>
@@ -84,7 +48,7 @@ const SecondSection = () => {
               <Persentage>{`(${finalWidth}%)`}</Persentage>
             </Languages>
             <BarCont>
-              <MyBar id={id} />
+              <progress id={id} value={finalWidth} />
             </BarCont>
           </Item>
         ))}

@@ -21,7 +21,7 @@ export const Box = styled.div`
 
   &:hover {
     background-color: #15263E;
-    padding: 30px 15px;
+    padding: 40px;
 
     > p {
       display: block
@@ -29,10 +29,12 @@ export const Box = styled.div`
 
     > h5 {
       color: white;
-      padding-top: 50px;
     }
 
     > img {
+      display: none;
+    }
+    .img-cont {
       display: none;
     }
   } 

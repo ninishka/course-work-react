@@ -34,6 +34,10 @@ export const KubiksWrap = styled.div`
 
   &:hover {
     background-image: none;
+    
+    .text-wrap { // how to receive child elem in parent hover
+      opacity: 1
+    }
 
     &::after {
       content: '';
@@ -44,16 +48,12 @@ export const KubiksWrap = styled.div`
       bottom: -30px;
       border: 4px solid red;
     }
-    
+
   }
 `;
 export const TextWrapp = styled.div`
   opacity: 0;
   transition: opacity 0.3s ease; /* Smooth transition for better UX */
-
-  &:hover {
-    opacity: 1;
-  }
   position: relative;
   z-index: 10;
 `;

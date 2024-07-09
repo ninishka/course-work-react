@@ -39,25 +39,23 @@ const teamClients = [
   },
 ]
 
-const EightSection = () => {
-  return (
-   <section>
-      <TitleLp>
-        <News>NEWS & EVENT</News>
-        <Articles>Rosa Team</Articles>
-      </TitleLp>
-      <RosaTeam>
-        {teamClients.map(({title, text}) => (
-          <KubiksWrap backgroundImg={img1}>
-            <TextWrapp>
-              <RosaTitle>{title}</RosaTitle>
-              <RosaText>{text}</RosaText>
-            </TextWrapp>
-          </KubiksWrap>
-        ))}
-      </RosaTeam>
-   </section>
-  );
-}
+const EightSection = () => (
+  <section>
+    <TitleLp>
+      <News>NEWS & EVENT</News>
+      <Articles>Rosa Team</Articles>
+    </TitleLp>
+    <RosaTeam>
+      {teamClients.map(({title, text}) => (
+        <KubiksWrap backgroundImg={img1}>
+          <TextWrapp className='text-wrap'>
+            <RosaTitle>{title}</RosaTitle>
+            <RosaText>{text}</RosaText>
+          </TextWrapp>
+        </KubiksWrap>
+      ))}
+    </RosaTeam>
+  </section>
+)
 
 export default EightSection;
