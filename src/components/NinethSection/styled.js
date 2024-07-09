@@ -67,7 +67,7 @@ export const Registration = styled.form`
   align-content: center;
   align-items: center;
   justify-content: center;
-  
+  margin-bottom: 100px;
 
   @media (max-width: 1030px) {
     width: 300px; 
@@ -105,8 +105,8 @@ export const TextArea = styled.textarea`
 export const SendButtonWrap = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
   position: relative;
+  margin-top: 50px;
 `
 
 export const SendButton = styled.button`

@@ -25,6 +25,11 @@ const progressBarData = [
 ]
 
 const SecondSection = () => {
+  // useEffect(() => {}, []) // start once
+  // useEffect(() => {}, [dependencies]) // start id dependencies has changed
+  // useEffect(() => {}) // start every render
+
+
   // function move() {
   //   let width = 10;
   

@@ -59,7 +59,9 @@ const NinethSection = () => {
                     type="text" 
                     id="first-name" 
                     name="first-name"
-                    required placeholder="Your Name*"/>
+                    required
+                    placeholder="Your Name*"
+                  />
                 </Field>
                 <Field> 
                   <Label for="email"></Label>
@@ -67,7 +69,9 @@ const NinethSection = () => {
                     type="text" 
                     id="email" 
                     name="email"
-                    required placeholder="Email Address*"/>
+                    required
+                    placeholder="Email Address*"
+                  />
                 </Field>
                 <Field> 
                   <Label for="website"></Label>
@@ -75,7 +79,9 @@ const NinethSection = () => {
                     type="url" 
                     id="website" 
                     name="website"
-                    required placeholder="Your Website*"/>
+                    required
+                    placeholder="Your Website*"
+                  />
                 </Field>
               </InputRow>
               <Label for="message"></Label>
@@ -96,7 +102,6 @@ const NinethSection = () => {
             </ModalContent>
           </Modal>
         </ContactUs>
-
       </MapBack>
     </>
   );

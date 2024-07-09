@@ -42,19 +42,19 @@ const teamClients = [
 const EightSection = () => {
   return (
    <section>
-        <TitleLp>
-            <News>NEWS & EVENT</News>
-            <Articles>Rosa Team</Articles>
-        </TitleLp>
+      <TitleLp>
+        <News>NEWS & EVENT</News>
+        <Articles>Rosa Team</Articles>
+      </TitleLp>
       <RosaTeam>
         {teamClients.map(({title, text}) => (
-        <KubiksWrap backgroundImg={img1}>
+          <KubiksWrap backgroundImg={img1}>
             <TextWrapp>
               <RosaTitle>{title}</RosaTitle>
               <RosaText>{text}</RosaText>
             </TextWrapp>
-        </KubiksWrap>
-      ))}
+          </KubiksWrap>
+        ))}
       </RosaTeam>
    </section>
   );
