@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/$%7BREACT_APP_HOMEPAGE%7D/static/css/main.f79f19b3.css",
-    "main.js": "/$%7BREACT_APP_HOMEPAGE%7D/static/js/main.b172b685.js",
+    "main.css": "/$%7BREACT_APP_HOMEPAGE%7D/static/css/main.0db2a9e4.css",
+    "main.js": "/$%7BREACT_APP_HOMEPAGE%7D/static/js/main.cde96a39.js",
     "static/js/453.5735ff76.chunk.js": "/$%7BREACT_APP_HOMEPAGE%7D/static/js/453.5735ff76.chunk.js",
     "static/media/tpt3.png": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/tpt3.1e2c25c555f16e5bdf8e.png",
     "static/media/tpt2.png": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/tpt2.843a45d510c1d529eb79.png",
@@ -34,12 +34,12 @@
     "static/media/icons8-facebook.svg": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/icons8-facebook.956ba52694f51806e01783eb5e8f6de0.svg",
     "static/media/heart.svg": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/heart.635a4793e9976f9917c8df0648a7377b.svg",
     "static/media/3.svg": "/$%7BREACT_APP_HOMEPAGE%7D/static/media/3.f6b3a2fe970a8d73dd4ffad8ef781d09.svg",
-    "main.f79f19b3.css.map": "/$%7BREACT_APP_HOMEPAGE%7D/static/css/main.f79f19b3.css.map",
-    "main.b172b685.js.map": "/$%7BREACT_APP_HOMEPAGE%7D/static/js/main.b172b685.js.map",
+    "main.0db2a9e4.css.map": "/$%7BREACT_APP_HOMEPAGE%7D/static/css/main.0db2a9e4.css.map",
+    "main.cde96a39.js.map": "/$%7BREACT_APP_HOMEPAGE%7D/static/js/main.cde96a39.js.map",
     "453.5735ff76.chunk.js.map": "/$%7BREACT_APP_HOMEPAGE%7D/static/js/453.5735ff76.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f79f19b3.css",
-    "static/js/main.b172b685.js"
+    "static/css/main.0db2a9e4.css",
+    "static/js/main.cde96a39.js"
   ]
 }
