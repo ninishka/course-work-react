@@ -88,7 +88,7 @@ export const RectangleButton = styled.input`
   width: 16px;
   height: 16px;
   cursor: pointer;
-  color: black;
+  color: white;
   appearance: none;
   border: none;
   position: absolute;
